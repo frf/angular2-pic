@@ -10,13 +10,17 @@ import { FotoModule } from './foto/foto.module';
 import { PainelModule } from './painel/painel.module';
 import { routing } from './app.routes';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   imports:      [ 
     BrowserModule, 
     HttpModule, 
     PainelModule, 
     FotoModule,
-    routing
+    routing,
+    FormsModule, 
+    ReactiveFormsModule
   ],
   declarations: [ AppComponent, ListagemComponent, CadastroComponent ],
   bootstrap:    [ AppComponent ]
